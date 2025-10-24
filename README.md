@@ -36,7 +36,7 @@ document.write() menulis teks langsung ke halaman web.
 console.log() menampilkan teks ke konsol (bisa dilihat lewat Inspect → Console).
 2. JavaScript Dasar
 
-a. Pemakaian Alert sebagai Property Window
+## a. Pemakaian Alert sebagai Property Window
 ```
 <html>
 <head>
@@ -53,7 +53,7 @@ a. Pemakaian Alert sebagai Property Window
 ```
 Penjelasan: Menampilkan pesan ke pengguna melalui pop-up alert box.
 
-b. Pemakaian Method dalam Objek
+## b. Pemakaian Method dalam Objek
 ```
 <html>
 <head>
@@ -73,5 +73,6 @@ b. Pemakaian Method dalam Objek
 Penjelasan:
 document.write() digunakan untuk menulis teks secara langsung di halaman web.
 Teks dapat digabung dengan tag HTML seperti <br> untuk ganti baris.
+## C. Pemakaian Prompt
 
 
