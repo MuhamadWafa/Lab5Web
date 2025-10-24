@@ -30,3 +30,46 @@ Contoh penggunaan document.write dan console.log untuk menampilkan teks di halam
 </body>
 </html>
 ```
+Penjelasan:
+
+document.write() menulis teks langsung ke halaman web.
+console.log() menampilkan teks ke konsol (bisa dilihat lewat Inspect → Console).
+2. JavaScript Dasar
+a. Pemakaian Alert sebagai Property Window
+```
+<html>
+<head>
+    <title>alert box</title>
+</head>
+<body>
+<script language="javascript">
+<!--
+    window.alert("ini merupakan pesan untuk anda");
+//-->
+</script>
+</body>
+</html>
+```
+Penjelasan: Menampilkan pesan ke pengguna melalui pop-up alert box.
+b. Pemakaian Method dalam Objek
+```
+<html>
+<head>
+    <title>skrip javascript</title>
+</head>
+<body>
+    percobaan memakai javascript:<br>
+<script language="javascript">
+<!--
+    document.write("selamat mencoba javascript<br>");
+    document.write("semoga sukses!");
+//-->
+</script>
+</body>
+</html>
+```
+Penjelasan:
+document.write() digunakan untuk menulis teks secara langsung di halaman web.
+Teks dapat digabung dengan tag HTML seperti <br> untuk ganti baris.
+
+
