@@ -180,4 +180,98 @@ Penjelasan: Membandingkan nilai input pengguna dan menampilkan hasil lulus atau 
 ```
 Penjelasan: switch digunakan untuk menyeleksi kondisi berdasarkan nilai tertentu.
 
+## 4. Pembuatan Form
+```
+a. Form Input
+<html>
+<head>
+<script language="javascript">
+    function test() {
+        var val1 = document.kirim.T1.value;
+        if (val1 % 2 == 0)
+            document.kirim.T2.value = "bilangan genap";
+        else
+            document.kirim.T2.value = "bilangan ganjil";
+    }
+</script>
+</head>
+<body>
+<form method="POST" name="kirim">
+    <p>BIL <input type="text" name="T1" size="20"></p>
+    <p>MERUPAKAN BIL <input type="text" name="T2" size="20"></p>
+    <p><input type="button" value="TEBAK" name="B1" onclick="test()"></p>
+</form>
+</body>
+</html>
+```
+Penjelasan: Script mengambil nilai input dari T1, mengecek apakah bilangan genap atau ganjil, lalu menampilkan hasil di T2.
+## b. Form Button
+```
+<html>
+<head>
+    <title>objek document</title>
+<script language="javascript">
+<!--
+    function ubahWarnaLB(warna) {
+        document.bgColor = warna;
+    }
+    function ubahWarnaLD(warna) {
+        document.fgColor = warna;
+    }
+//-->
+</script>
+</head>
+<body>
+<input type="button" value="Latar Belakang Hijau" onClick="ubahWarnaLB('GREEN')">
+<input type="button" value="Latar Belakang Putih" onClick="ubahWarnaLB('WHITE')">
+<input type="button" value="Teks Kuning" onClick="ubahWarnaLD('YELLOW')">
+<input type="button" value="Teks Biru" onClick="ubahWarnaLD('BLUE')">
+
+<script language="javascript">
+    document.write("Dimodifikasi terakhir pada " + document.lastModified);
+</script>
+</body>
+</html>
+```
+Penjelasan:
+
+Mengubah warna latar belakang (bgColor) dan warna teks (fgColor).
+document.lastModified menampilkan tanggal terakhir file diubah.
+
+## 5. HTML DOM
+Pilihan Menggunakan CheckBox dengan Perhitungan Otomatis
+```
+<html>
+<head>
+    <title>Daftar Menu</title>
+<script>
+function hitung(ele) {
+    total = document.getElementById('total').value;
+    total = (total ? parseInt(total) : 0);
+    var harga = 0;
+
+    if (ele.checked)
+        harga = ele.value;
+    else
+        harga = -ele.value;
+
+    total += parseInt(harga);
+    document.getElementById('total').value = total;
+}
+</script>
+</head>
+<body>
+<h1>Daftar Menu Makanan</h1>
+<label><input type="checkbox" value="5000" id="menu1" onclick="hitung(this);"> Ayam Goreng Rp. 5.000</label><br>
+<label><input type="checkbox" value="500" id="menu2" onclick="hitung(this);"> Tempe Goreng Rp. 500</label><br>
+<label><input type="checkbox" value="2500" id="menu3" onclick="hitung(this);"> Telur Dadar Rp. 2.500</label><br>
+<strong>Total Bayar: Rp. <input id="total" type="text" /></strong>
+</body>
+</html>
+```
+Penjelasan:
+
+Menggunakan getElementById() untuk mengakses elemen input berdasarkan ID-nya.
+Setiap kali checkbox diklik, fungsi hitung() akan menambah atau mengurangi total harga sesuai pilihan pengguna.
+
 
