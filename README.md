@@ -35,6 +35,7 @@ Penjelasan:
 document.write() menulis teks langsung ke halaman web.
 console.log() menampilkan teks ke konsol (bisa dilihat lewat Inspect → Console).
 2. JavaScript Dasar
+
 a. Pemakaian Alert sebagai Property Window
 ```
 <html>
@@ -51,6 +52,7 @@ a. Pemakaian Alert sebagai Property Window
 </html>
 ```
 Penjelasan: Menampilkan pesan ke pengguna melalui pop-up alert box.
+
 b. Pemakaian Method dalam Objek
 ```
 <html>
