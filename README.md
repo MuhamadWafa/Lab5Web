@@ -74,5 +74,37 @@ Penjelasan:
 document.write() digunakan untuk menulis teks secara langsung di halaman web.
 Teks dapat digabung dengan tag HTML seperti <br> untuk ganti baris.
 ## C. Pemakaian Prompt
+```
+<html>
+<head>
+    <title>pemasukan data</title>
+</head>
+<body>
+<script language="javascript">
+<!--
+    var nama = prompt("siapa nama anda?", "masukkan nama anda");
+    document.write("hai, " + nama);
+//-->
+</script>
+</body>
+</html>
+```
+Penjelasan: prompt() meminta input teks dari pengguna, lalu hasilnya ditampilkan dengan document.write().
 
+## d. Pembuatan Fungsi dan Cara Pemanggilannya
+```
+<html>
+<head>
+    <title>contoh program javascript</title>
+<script language="javascript">
+    function pesan() {
+        alert("memanggil javascript lewat body onload");
+    }
+</script>
+</head>
+<body onload=pesan()>
+</body>
+</html>
+```
+Penjelasan: Fungsi pesan() akan dijalankan otomatis saat halaman dimuat (onload).
 
