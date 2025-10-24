@@ -108,3 +108,76 @@ Penjelasan: prompt() meminta input teks dari pengguna, lalu hasilnya ditampilkan
 ```
 Penjelasan: Fungsi pesan() akan dijalankan otomatis saat halaman dimuat (onload).
 
+# 3. Dasar Pemrograman di JavaScript
+## a. Operasi Dasar Aritmatika
+```
+<html>
+<head>
+    <title>contoh program javascript</title>
+<script language="javascript">
+    function test(val1, val2) {
+        document.write("<br>perkalian : val1*val2 = " + val1 * val2 + "<br>");
+        document.write("pembagian : val1/val2 = " + val1 / val2 + "<br>");
+        document.write("penjumlahan : val1+val2 = " + (val1 + val2) + "<br>");
+        document.write("pengurangan : val1-val2 = " + (val1 - val2) + "<br>");
+        document.write("modulus : val1%val2 = " + (val1 % val2) + "<br>");
+    }
+</script>
+</head>
+<body>
+    <input type="button" name="button1" value="arithmetic" onclick="test(9,4)">
+</body>
+</html>
+```
+Penjelasan: Menampilkan hasil operasi aritmatika sederhana menggunakan dua nilai (9 dan 4).
+
+## b. Seleksi Kondisi (if...else)
+```
+<html>
+<head>
+    <title>contoh if-else</title>
+</head>
+<body>
+<script language="javascript">
+<!--
+    var nilai = prompt("nilai (0-100): ", 0);
+    var hasil = "";
+    if (nilai >= 60)
+        hasil = "lulus";
+    else
+        hasil = "tidak lulus";
+    document.write("hasil: " + hasil);
+//-->
+</script>
+</body>
+</html>
+```
+Penjelasan: Membandingkan nilai input pengguna dan menampilkan hasil lulus atau tidak lulus.
+
+## c. Penggunaan Operator Switch untuk Seleksi Kondisi
+```
+<html>
+<head>
+    <title>contoh program javascript</title>
+<script language="javascript">
+    function test() {
+        val = window.prompt("input nilai (1-5):");
+        switch (val) {
+            case "1": document.write("bilangan satu"); break;
+            case "2": document.write("bilangan dua"); break;
+            case "3": document.write("bilangan tiga"); break;
+            case "4": document.write("bilangan empat"); break;
+            case "5": document.write("bilangan lima"); break;
+            default: document.write("bilangan lainnya");
+        }
+    }
+</script>
+</head>
+<body>
+    <input type="button" name="button1" value="switch" onclick="test()">
+</body>
+</html>
+```
+Penjelasan: switch digunakan untuk menyeleksi kondisi berdasarkan nilai tertentu.
+
+
