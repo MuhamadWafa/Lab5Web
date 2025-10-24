@@ -332,4 +332,13 @@ Jika semua benar → muncul alert “Data berhasil dikirim!”
 Hasil Tampilan di Browser:
 Form akan menampilkan 3 field (Nama, Email, Password) dan tombol Kirim. Saat tombol ditekan, JavaScript akan menampilkan alert sesuai kondisi input.
 
+<img width="1916" height="337" alt="image" src="https://github.com/user-attachments/assets/8a6a33d5-84a7-46a3-b8c2-d9f3822198b7" />
+
+Kesimpulan:
+Melalui praktikum ini, mahasiswa dapat memahami dasar-dasar JavaScript meliputi:
+
+Penulisan kode JavaScript di dalam HTML
+Penggunaan fungsi alert(), prompt(), document.write(), if, switch, function
+Validasi form input menggunakan JavaScript
+Menampilkan hasil di browser dan console
 
